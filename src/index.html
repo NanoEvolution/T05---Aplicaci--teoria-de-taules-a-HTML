@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T05 - Aplicació teoria de taules a HTML</title>
+</head>
+<body>
+    <h1>Ejercicio 1: Crear una tabla básica</h1>
+    <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Juan</td>
+            <td>Pérez</td>
+            <td>25</td>
+          </tr>
+
+          <tr>
+            <td>Ana</td>
+            <td>Gómez</td>
+            <td>30</td>
+          </tr>
+
+          <tr>
+            <td>Luis</td>
+            <td>Torrez</td>
+            <td>20</td>
+          </tr>
+
+        </tbody>
+      </table>
+      
+      <br>
+      <h1>Ejercicio 2: Agregar un título a la tabla</h1>
+      <table>
+        <caption>Lista de Personas</caption>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>Juan</td>
+              <td>Pérez</td>
+              <td>25</td>
+            </tr>
+  
+            <tr>
+              <td>Ana</td>
+              <td>Gómez</td>
+              <td>30</td>
+            </tr>
+  
+            <tr>
+              <td>Luis</td>
+              <td>Torrez</td>
+              <td>20</td>
+            </tr>
+  
+          </tbody>
+        </table>
+
+        <br>
+        <h1>Ejercicio 3: Tabla con bordes y espaciado</h1>
+        <table border="1" cellspacing="5" cellpadding="10" >
+            <caption>Lista de Personas</caption>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Edad</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Juan</td>
+                  <td>Pérez</td>
+                  <td>25</td>
+                </tr>
+      
+                <tr>
+                  <td>Ana</td>
+                  <td>Gómez</td>
+                  <td>30</td>
+                </tr>
+      
+                <tr>
+                  <td>Luis</td>
+                  <td>Torrez</td>
+                  <td>20</td>
+                </tr>
+      
+              </tbody>
+            </table>
+
+        <br>
+        <h1>Ejercicio 4: Combinar columnas con colspan</h1>
+        <table>
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th colspan="2">Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>10:00-11:00: Matemáticas</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>11:00-12:00: Historia</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h1>Ejercicio 5: Combinar filas con rowspan</h1>
+    <table>
+    <thead>
+        <tr>
+            <th>Persona</th>
+            <th>Actividad</th>
+            <th>Hora</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Juan</td>
+            <td>Deportes</td>
+            <td>10:00-11:00</td>
+        </tr>
+        <tr>
+            <td>Estudio</td>
+            <td>11:00-12:00</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Arte</td>
+            <td>10:00-12:00</td>
+        </tr>
+    </tbody>
+</table>
+
+    <br>
+    <h1>Ejercicio 6: Crear una tabla con thead, tbody y tfoot</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+           
+        <tbody>
+            <tr>
+                <td>Manzana</td>
+                <td>10</td>
+                <td>5€</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>30€</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <h1>Ejercicio 7: Crear una tabla anidada</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camisa</td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Colores</th>
+                                <th>Tallas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rojo</td>
+                                <td>M</td>
+                            </tr>
+                            <tr>
+                                <td>Azul</td>
+                                <td>L</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h1>Ejercicio 8: Representar un calendario</h1>
+    <table border="1" cellspacing="5" cellpadding="5">
+        <caption>Enero 2025</caption>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <h1>Ejercicio 9: Crear un Tablero de Ajedrez</h1>
+    <table border="1" cellspacing="5" cellpadding="10">
+        <thead>
+            <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>  
+                <td>N</td>  
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>  
+                <td>B</td>  
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>  
+                <td>N</td>  
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>  
+                <td>B</td>  
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>  
+                <td>N</td>  
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>  
+                <td>B</td>   
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>  
+                <td>N</td>  
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>
+                <td>B</td>
+                <td>N</td>  
+                <td>B</td>  
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <footer>Daniel Cobo Palao - 1ºDAM</footer>
+</body>
+</html>
